@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Nhập a</th>
+        <td><input type="number" id="a"></td>
+    </tr>
+    <tr>
+        <th>Nhập b</th>
+        <td><input type="number" id="b"></td>
+    </tr>
+    <tr>
+        <td><button onclick="demo()">Ấn thử xem</button></td>
+    </tr>
+    <tr>
+        <td>
+            <p id="ketqua"></p>
+        </td>
+    </tr>
+</table>
+<script>
+function demo() {
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    amu2 = a * a
+    amub = Math.pow(a,b)
+    if (a!=="" && b!== "") {
+        document.getElementById("ketqua").innerHTML = "a^2 = " + amu2 +"<br>" + "a^b = " + amub
+    } else {alert("Chưa nhập đủ bạn thân ơi")}
+}
+</script>
+</body>
+</html>

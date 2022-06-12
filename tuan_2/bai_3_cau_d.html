@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số năm lần lượt vào ô làm tròn 4 số ( vd: 0123)</p>
+<input type="number" id="a">
+<input type="number" id="b">
+<input type="number" id="c">
+<input type="number" id="d">
+<button onclick="demo()">kiểm tra</button>
+<p id="ketqua"></p>
+</body>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let d = document.getElementById("d").value;
+        let theky = 1 + "a" + "b"
+        let ky1 = a + b
+        if (c == 0 && d == 0) { document.getElementById("ketqua").innerHTML="Thế kỷ: " + ky1}
+        else {
+            document.getElementById("ketqua").innerHTML= "The kỷ: " + theky
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Cạnh hình vuông:
+<input type="number" id="a"/>
+<button onclick="demo()">check</button>
+<p id="ketqua"></p>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let chuVi = a * 4;
+        let dienTich = a * a;
+        if (a < 0) {
+            alert("Sai rồi học lại lớp 4 đi :)")
+
+        } else {
+            document.getElementById("ketqua").innerHTML = "Chu vi hình vuông = " + chuVi + "<br>"+" Diện tích hình vuông = " + dienTich;
+        }
+    }
+</script>
+</body>
+</html>

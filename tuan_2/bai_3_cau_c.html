@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+      <th>Nhập a: </th>
+      <td><input type="number" id="a"></td>
+  </tr>
+      <th>Nhập b: </th>
+      <td><input type="number" id="b"></td>
+  </tr>
+   <td><button onclick="demo()">check</button></td>
+  </tr>
+    <tr>
+        <td>
+            <p id="ketqua"></p>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        ssh = (b-a)/1 + 1
+        tong = ((a + b) * ssh) / 2
+        if (a > b) {alert("Số đầu phải nhỏ hơn số cuối chứ bạn ơi")} else
+        {
+            document.getElementById("ketqua").innerHTML = "Tổng = " + tong
+        }
+    }
+</script>
+</html>

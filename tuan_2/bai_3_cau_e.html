@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Nhập cạnh a: </th>
+        <td>
+            <input type="nuber" id="a">
+        </td>
+    </tr>
+    <tr>
+        <th>Nhập cạnh b: </th>
+        <td>
+            <input type="nuber" id="b">
+        </td>
+    </tr>
+    <tr>
+        <th>Nhập cạnh c: </th>
+        <td>
+            <input type="nuber" id="c">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="demo()">Kiểm tra</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p id="ketqua"></p>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        if (a<0 || b<0 || c<0) {
+            document.getElementById("ketqua").innerHTML= "Làm gì có cạnh nào nhỏ hơn 0, ngáo à"
+        } else if (a==b && b==c) {
+            document.getElementById("ketqua").innerHTML = "Đây là 1 tam giác đều"
+        } else if (a==b || b==c || c==a) {
+            document.getElementById("ketqua").innerHTML = "Đây là một tam giác cân"
+        } else if (((a*a + b*b) == c*c) || ((b*b + c*c) == a*a) || ((c*c +a*a) == b*b)) {
+            document.getElementById("ketqua").innerHTML = "Đây là một tam giác vuông"
+        } else {
+            document.getElementById("ketqua").innerHTML = "Đây là một tam giác"
+        }
+    }
+</script>
+</html>
