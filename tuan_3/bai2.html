@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bienmang = [1,5,3,6,7,3,5,8,14,18,22,28,8,3];
+    let soluong = 0;
+    let so = prompt("Bạn muốn kiểm tra số gì nhỉ: ");
+function tong() {
+    for (let i = 0; i < bienmang.length; i++) {
+        if (bienmang[i] == so) {
+            soluong ++
+        }
+    } return soluong;
+} document.write("số phần tử "+so +" có trong mang = " + tong());
+</script>
+</body>
+</html>

@@ -24,14 +24,14 @@
 </body>
 <script>
     function demo() {
-        let a = document.getElementById("a").value;
-        let b = document.getElementById("b").value;
-        ssh = (b-a)/1 + 1
-        tong = ((a + b) * ssh) / 2
-        if (a > b) {alert("Số đầu phải nhỏ hơn số cuối chứ bạn ơi")} else
-        {
-            document.getElementById("ketqua").innerHTML = "Tổng = " + tong
-        }
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let tong = 0
+        if (a<b) {
+            for (i=a;i<=b;i++) {
+                tong += i; document.getElementById("ketqua").innerHTML= tong
+            }
+        } else {alert("a phải nhỏ hơn b chứ b trẻ")}
     }
 </script>
 </html>

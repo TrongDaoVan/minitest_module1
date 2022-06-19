@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let bienmang = [1,2,5,4,8,6,11,13,16];
+  let soluong = 0;
+  function tong() {
+      for (let i = 0; i < bienmang.length; i++) {
+          if (bienmang[i]%2 == 0) {
+              soluong ++
+          }
+      } return soluong;
+  }
+  document.write("Số lượng phần tử chẵn trong mảng = "+tong());
+
+</script>
+</body>
+</html>
